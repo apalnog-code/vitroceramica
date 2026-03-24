@@ -1,8 +1,8 @@
-##Vitrocerámica
+## Vitrocerámica
 
 Aplicación web que simula el funcionamiento de una vitrocerámica, permitiendo encender/apagar los fuegos y controlar su nivel de potencia de forma interactiva.
 
-#Tecnologías
+# Tecnologías
 HTML
 CSS
 JavaScript
@@ -16,7 +16,7 @@ Visualizar el nivel de potencia de cada zona
 
 Toda la lógica está implementada en JavaScript, mientras que el diseño y la disposición visual se han desarrollado con CSS para replicar una apariencia realista.
 
-#Estructura del proyecto
+# Estructura del proyecto
 index.html → estructura de la aplicación
 css/ → estilos visuales
 js/ → lógica de funcionamiento
