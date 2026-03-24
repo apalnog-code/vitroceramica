@@ -3,10 +3,9 @@
 Aplicación web que simula el funcionamiento de una vitrocerámica, permitiendo encender/apagar los fuegos y controlar su nivel de potencia de forma interactiva.
 
 ## Tecnologías
-HTML
-CSS
-JavaScript
-Funcionalidad
+HTML, CSS y JavaScript
+
+## Funcionalidad
 
 La aplicación presenta una interfaz visual similar a una vitrocerámica real, donde el usuario puede interactuar con distintos controles:
 
