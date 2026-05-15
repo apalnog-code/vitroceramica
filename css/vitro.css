@@ -252,3 +252,46 @@ i{
         margin: 3px;
     }
 }
+
+
+/* =========================
+   MÓVIL EN HORIZONTAL
+========================= */
+@media (max-width: 900px) and (orientation: landscape){
+
+    body{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        width: 70vw;
+        height: 95vh;
+    }
+
+    /* FUEGOS MÁS PEQUEÑOS PARA QUE QUEPAN */
+    .circulos div span{
+        width: min(120px, 18vh);
+        height: min(120px, 18vh);
+    }
+
+    .circulos{
+        flex: 2;
+        padding: 10px;
+    }
+
+    .botones{
+        flex: 1;
+    }
+
+    .numeros span,
+    .potencia span,
+    .acciones span{
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+
+    i{
+        font-size: 14px;
+    }
+}
