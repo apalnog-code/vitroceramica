@@ -27,8 +27,8 @@ span{
    VITRO
 ========================= */
 .container{
-    width: 600px;
-    height: 700px;
+    width: min(650px, 95vw);
+    aspect-ratio: 5 / 6;
 
     background-color: black;
 
@@ -36,10 +36,10 @@ span{
 
     box-shadow: 0px 0px 15px black;
 
-    overflow: hidden;
-
     display: flex;
     flex-direction: column;
+
+    overflow: hidden;
 }
 
 
@@ -47,11 +47,12 @@ span{
    FUEGOS
 ========================= */
 .circulos{
-    height: 70%;
-
+    flex: 3;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    padding: 15px;
 
     border-bottom: 1px solid rgb(70,70,70);
 }
@@ -63,11 +64,10 @@ span{
 }
 
 .circulos div span{
-    width: 170px;
-    height: 170px;
+    width: min(160px, 22vw);
+    height: min(160px, 22vw);
 
     border-radius: 50%;
-
     border: 3px solid rgb(180,180,180);
 }
 
@@ -76,18 +76,18 @@ span{
    BOTONES
 ========================= */
 .botones{
-    height: 30%;
-
+    flex: 1;
     display: flex;
 }
 
 .botones > div{
     flex: 1;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    min-width: 0;
 }
 
 
@@ -197,5 +197,58 @@ i{
 
     i{
         font-size: 14px;
+    }
+}
+
+
+
+@media (max-width: 600px){
+
+    .container{
+        width: 95vw;
+        height: 90vh;
+    }
+
+    /* FUEGOS: que no se pisen */
+    .circulos{
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .circulos div{
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    .circulos div span{
+        width: 22vw;
+        height: 22vw;
+
+        max-width: 90px;
+        max-height: 90px;
+
+        min-width: 60px;
+        min-height: 60px;
+    }
+
+    /* BOTONES: evitar que se aplasten */
+    .botones{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .botones > div{
+        width: 100%;
+        border-right: none;
+        border-top: 1px solid rgb(40,40,40);
+        padding: 10px 0;
+    }
+
+    .numeros span,
+    .potencia span,
+    .acciones span{
+        padding: 6px 10px;
+        font-size: 14px;
+        margin: 3px;
     }
 }
