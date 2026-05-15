@@ -1,0 +1,201 @@
+/* =========================
+   BODY
+========================= */
+body{
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../imagenes/mesamarmol.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span{
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/* =========================
+   VITRO
+========================= */
+.container{
+    width: 600px;
+    height: 700px;
+
+    background-color: black;
+
+    border-radius: 30px;
+
+    box-shadow: 0px 0px 15px black;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   FUEGOS
+========================= */
+.circulos{
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    border-bottom: 1px solid rgb(70,70,70);
+}
+
+.circulos div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.circulos div span{
+    width: 170px;
+    height: 170px;
+
+    border-radius: 50%;
+
+    border: 3px solid rgb(180,180,180);
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+.botones{
+    height: 30%;
+
+    display: flex;
+}
+
+.botones > div{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================
+   NUMEROS Y POTENCIA
+========================= */
+.numeros,
+.potencia{
+    border-right: 1px solid rgb(50,50,50);
+}
+
+.numeros div,
+.potencia div,
+.acciones div{
+    margin: 15px;
+}
+
+.numeros span,
+.potencia span,
+.acciones span{
+    color: rgb(220,220,220);
+
+    border: 1px solid rgb(120,120,120);
+
+    border-radius: 8px;
+
+    padding: 10px 14px;
+
+    margin: 5px;
+
+    display: inline-block;
+}
+
+
+/* =========================
+   ICONOS
+========================= */
+i{
+    color: rgb(220,220,220);
+
+    text-shadow: 0px 0px 10px red;
+}
+
+
+/* =========================
+   EFECTOS
+========================= */
+.encendidofuego{
+    border: 3px solid red !important;
+
+    box-shadow: 0 0 15px red;
+
+    background-color: rgba(255,0,0,0.1);
+}
+
+.encendidoBotones{
+    color: red !important;
+
+    background-color: rgb(70,0,0);
+
+    border-color: red !important;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 900px){
+
+    .container{
+        width: 80vw;
+        height: 80vh;
+    }
+
+    .circulos div span{
+        width: 140px;
+        height: 140px;
+    }
+}
+
+
+/* =========================
+   MOVIL
+========================= */
+@media (max-width: 600px){
+
+    .container{
+        width: 95vw;
+        height: 85vh;
+    }
+
+    .circulos div span{
+        width: 32vw;
+        height: 32vw;
+
+        max-width: 110px;
+        max-height: 110px;
+    }
+
+    .numeros span,
+    .potencia span,
+    .acciones span{
+        padding: 8px 10px;
+
+        font-size: 14px;
+    }
+
+    i{
+        font-size: 14px;
+    }
+}
